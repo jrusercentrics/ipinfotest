@@ -23,10 +23,15 @@ fetch('https://ipinfo.io/json?token=ae0230480b8a04')
   document.head.appendChild(script);
 } else {
   // Load Cookiebot without TCF
+  const geoRegions = {
+  region: 'US, BR',
+  cbid: '49fa04fa-cf66-4c8b-926c-9ad1604764de'
+};
   const script = document.createElement('script');
   script.src = 'https://consent.cookiebot.com/uc.js';
-  script.setAttribute('data-cbid', '49fa04fa-cf66-4c8b-926c-9ad1604764de');
+  script.setAttribute('data-cbid', 'e2769309-3672-42d4-bc3f-d56333e6a880');
   script.setAttribute('data-blockingmode', 'auto');
+  script.setAttribute('data-georegions', JSON.stringify(geoRegions));
   document.head.appendChild(script);
 }
 
