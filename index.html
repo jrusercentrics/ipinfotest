@@ -16,14 +16,14 @@ fetch('https://ipinfo.io/json?token=ae0230480b8a04')
     if (euCountries.includes(userCountry)) {
       // Load Cookiebot with TCF
       const script = document.createElement('script');
-      script.src = 'https://consent.cookiebot.com/uc.js" data-cbid="e2769309-3672-42d4-bc3f-d56333e6a880';
+      script.src = 'https://consent.cookiebot.com/uc.js" data-cbid="e2769309-3672-42d4-bc3f-d56333e6a880"';
       script.data-framework="TCFv2.2";
       script.data-blockingmode="auto";
       document.head.appendChild(script);
     } else {
       // Load Cookiebot without TCF
       const script = document.createElement('script');
-      script.src = 'https://consent.cookiebot.com/uc.js" data-cbid="e2769309-3672-42d4-bc3f-d56333e6a880';
+      script.src = 'https://consent.cookiebot.com/uc.js" data-cbid="49fa04fa-cf66-4c8b-926c-9ad1604764de"';
       script.data-blockingmode="auto";
       document.head.appendChild(script);
     }
